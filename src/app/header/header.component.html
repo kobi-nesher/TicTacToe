@@ -1,0 +1,18 @@
+<h1 class="display-4 text-center">Welcome to Tic-Tac-Toe</h1>
+
+<div class="row text-center">
+  <div class="col-6">
+    <div class="player player-1 display-4">
+      {{ Player1.name }} : {{ Player1.score }}
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="player player-2 display-4">
+      {{ Player2.name }} : {{ Player2.score }}
+    </div>
+  </div>
+
+  <button (click)="Reset()" class="mx-auto mt-3 col-4 btn btn-danger">
+    Reset
+  </button>
+</div>

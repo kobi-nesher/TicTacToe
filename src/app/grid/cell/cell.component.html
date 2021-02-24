@@ -1,0 +1,12 @@
+<div (click)="Clicked()">
+  <button
+    [disabled]="cell.value != ''"
+    class="display-1 btn"
+    [ngClass]="{
+      'btn-info': cell.value == 'X',
+      'btn-warning': cell.value == 'O'
+    }"
+  >
+    {{ cell.value }}
+  </button>
+</div>

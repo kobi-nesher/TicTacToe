@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <app-header
+        (reset)="Reset()"
+        [Player1]="Player1"
+        [Player2]="Player2"
+      ></app-header>
+    </div>
+  </div>
+  <h3>{{ turn.value == "X" ? Player1.name : Player2.name }}'s Turn</h3>
+  <app-grid
+    [turn]="turn"
+    [grid]="grid"
+    (clickedCell)="ClickedCell()"
+  ></app-grid>
+</div>
+
+<!--
+player 1
+player 2
+
+player{
+  name
+  score
+}
+
+grid: array[3][3]<cell>
+
+cell {
+  isEmpty()
+  value = ('X', 'O')
+  fillCell(symbol:string){
+    this.value=symbol;
+  })
+}
+-->

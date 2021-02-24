@@ -1,0 +1,16 @@
+$height: 7rem;
+
+.player-1 {
+  background-color: Pink;
+}
+
+.player-2 {
+  background-color: green;
+}
+
+.player {
+  height: $height;
+  text-align: center;
+  line-height: $height;
+  color: rgba($color: rgb(245, 245, 245), $alpha: 1);
+}

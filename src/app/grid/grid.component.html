@@ -1,0 +1,11 @@
+<div class="board mt-3">
+  <div style="display: flex; width: 450px; flex-wrap: wrap">
+    <div *ngFor="let cell of grid">
+      <app-cell
+        [turn]="turn"
+        (clicked)="ClickedCell()"
+        [cell]="cell"
+      ></app-cell>
+    </div>
+  </div>
+</div>
